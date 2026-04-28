@@ -9,7 +9,7 @@ import Magnetic from "@/components/Magnetic";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const words = ["WEB TASARIM", "SOSYAL MEDYA", "DİJİTAL REKLAM", "MARKA KİMLİĞİ"];
+const words = ["WEB TASARIM", "GRAFİK TASARIM", "REKLAM", "DİJİTAL AJANS", "ÖZEL YAZILIM"];
 
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -103,7 +103,7 @@ const Hero = () => {
              <div className="flex items-center gap-6 reveal-text">
                 <Magnetic>
                    <button className="flex items-center justify-center px-12 py-6 rounded-full border border-black text-black font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-all group text-lg">
-                      LET'S CONNECT
+                      İLETİŞİME GEÇELİM
                    </button>
                 </Magnetic>
                 <Magnetic>
@@ -117,7 +117,7 @@ const Hero = () => {
           {/* New Bottom Content to fill space */}
           <div className="w-full pt-20 border-t border-black/5 flex flex-wrap justify-between items-end gap-12 reveal-text">
              <div className="flex flex-col gap-4">
-                <span className="text-[10px] font-bold text-black/30 uppercase tracking-[0.2em]">Trusted By Industry Leaders</span>
+                 <span className="text-[10px] font-bold text-black/30 uppercase tracking-[0.2em]">Dijital Dünyada Lider Çözümler ®</span>
                 <div className="flex items-center gap-8 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
                    {/* Placeholder logos using simple text for now */}
                    <span className="text-xl font-heading font-bold">GOOGLE</span>
@@ -130,15 +130,15 @@ const Hero = () => {
              <div className="flex items-center gap-16">
                 <div>
                    <h3 className="text-4xl font-heading font-black text-black">150+</h3>
-                   <p className="text-[10px] font-bold text-black/30 uppercase tracking-[0.1em]">Projects Done</p>
+                   <p className="text-[10px] font-bold text-black/30 uppercase tracking-[0.1em]">Tamamlanan Projeler</p>
                 </div>
                 <div>
                    <h3 className="text-4xl font-heading font-black text-black">12</h3>
-                   <p className="text-[10px] font-bold text-black/30 uppercase tracking-[0.1em]">Awards Won</p>
+                   <p className="text-[10px] font-bold text-black/30 uppercase tracking-[0.1em]">Kazanılan Ödüller</p>
                 </div>
                 <div>
                    <h3 className="text-4xl font-heading font-black text-black">10+</h3>
-                   <p className="text-[10px] font-bold text-black/30 uppercase tracking-[0.1em]">Years Exp.</p>
+                   <p className="text-[10px] font-bold text-black/30 uppercase tracking-[0.1em]">Yıllık Deneyim</p>
                 </div>
              </div>
           </div>

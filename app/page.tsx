@@ -10,6 +10,8 @@ import FeatureGrid from "@/components/FeatureGrid";
 import FAQAccordion from "@/components/FAQAccordion";
 import Newsletter from "@/components/Newsletter";
 
+import BlogSnippet from "@/components/BlogSnippet";
+
 export default function Home() {
   return (
     <main className="bg-background">
@@ -21,6 +23,7 @@ export default function Home() {
       <SelectedWorks />
       <Testimonials />
       <TeamSection />
+      <BlogSnippet />
     </main>
   );
 }

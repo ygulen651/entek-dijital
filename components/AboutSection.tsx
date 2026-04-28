@@ -99,7 +99,7 @@ const AboutSection = () => {
                   </defs>
                   <text className="text-[8px] font-bold uppercase fill-black/20 tracking-[2px]">
                     <textPath href="#circlePath">
-                      • AWARD WINNER • AGENCY OF THE YEAR • AWARD WINNER •
+                      • ÖDÜLLÜ AJANS • YILIN AJANSI • ÖDÜLLÜ AJANS •
                     </textPath>
                   </text>
                 </svg>

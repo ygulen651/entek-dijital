@@ -6,35 +6,35 @@ import { ArrowUpRight, Hexagon, Component, Sparkles } from "lucide-react";
 const servicesData = [
   {
     id: "01",
-    title: "Design",
-    description: "We offer you a comprehensive range of digital marketing services designed to help your business thrive in the digital landscape.",
+    title: "Tasarım",
+    description: "İşletmenizin dijital dünyada gelişmesine yardımcı olmak için tasarlanmış kapsamlı dijital pazarlama hizmetleri sunuyoruz.",
     icon: <Hexagon className="w-12 h-12 text-primary-neon" strokeWidth={1} />,
     items: [
-      "1. Graphic Design",
-      "2. Branding and Identity",
-      "3. Web and Digital Design",
+      "1. Grafik Tasarım",
+      "2. Marka Kimliği",
+      "3. Web ve Dijital Tasarım",
     ]
   },
   {
     id: "02",
-    title: "Development",
-    description: "We offer you a comprehensive range of digital marketing services designed to help your business thrive in the digital landscape.",
+    title: "Geliştirme",
+    description: "Modern teknolojiler kullanarak işletmenize özel, yüksek performanslı ve ölçeklenebilir dijital çözümler üretiyoruz.",
     icon: <Component className="w-12 h-12 text-primary-neon" strokeWidth={1} />,
     items: [
-      "1. E-commerce Development",
-      "2. Custom Website Development",
-      "3. Responsive Web Development",
+      "1. E-ticaret Geliştirme",
+      "2. Özel Web Sitesi Yazılımı",
+      "3. Responsive Web Tasarımı",
     ]
   },
   {
     id: "03",
-    title: "Marketing",
-    description: "We offer you a comprehensive range of digital marketing services designed to help your business thrive in the digital landscape.",
+    title: "Pazarlama",
+    description: "Markanızın görünürlüğünü artırmak ve hedef kitlenize ulaşmak için veriye dayalı stratejiler uyguluyoruz.",
     icon: <Sparkles className="w-12 h-12 text-primary-neon" strokeWidth={1} />,
     items: [
-      "1. Technical SEO",
-      "2. On-page optimization",
-      "3. SEO audits and analysis",
+      "1. Teknik SEO",
+      "2. Sayfa İçi Optimizasyon",
+      "3. SEO Denetimi ve Analizi",
     ]
   }
 ];
@@ -49,15 +49,15 @@ const StackedServices = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-1.5 h-1.5 rounded-full bg-white" />
-              <span className="text-sm font-sans font-medium text-white tracking-wide">Our Services</span>
+              <span className="text-sm font-sans font-medium text-white tracking-wide">Hizmetlerimiz</span>
             </div>
             <h2 className="text-5xl lg:text-6xl font-heading font-medium text-white">
-              What we offer to you
+              Size Neler Sunuyoruz?
             </h2>
           </div>
           
           <button className="flex items-center justify-center px-8 py-3 rounded-full border border-white/20 text-white text-sm font-medium hover:bg-white hover:text-black transition-colors group">
-            See All Services
+            Tüm Hizmetleri Gör
             <div className="ml-3 w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:border-black/20 transition-colors">
               <ArrowUpRight size={16} />
             </div>
@@ -78,7 +78,7 @@ const StackedServices = () => {
                   <span className="text-white text-xl font-medium">({service.id})</span>
                   
                   <div className="hidden lg:block mt-32">
-                    <span className="text-white/40 text-sm font-medium mb-4 block">Show Details</span>
+                    <span className="text-white/40 text-sm font-medium mb-4 block">Detayları Gör</span>
                     <div className="w-24 h-24 border border-primary-neon flex items-center justify-center group-hover:bg-primary-neon/10 transition-colors cursor-pointer">
                       <ArrowUpRight className="w-12 h-12 text-primary-neon" strokeWidth={1} />
                     </div>
@@ -113,7 +113,7 @@ const StackedServices = () => {
 
                   {/* Mobile Show Details */}
                   <div className="block lg:hidden mt-12">
-                    <span className="text-white/40 text-sm font-medium mb-4 block">Show Details</span>
+                    <span className="text-white/40 text-sm font-medium mb-4 block">Detayları Gör</span>
                     <div className="w-16 h-16 border border-primary-neon flex items-center justify-center">
                       <ArrowUpRight className="w-8 h-8 text-primary-neon" strokeWidth={1} />
                     </div>

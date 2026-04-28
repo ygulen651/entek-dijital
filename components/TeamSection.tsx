@@ -13,15 +13,15 @@ const TeamSection = () => {
           <div className="space-y-4">
              <div className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-black" />
-                <span className="text-sm font-sans font-medium text-black tracking-wide">Our Team Members</span>
+                <span className="text-sm font-sans font-medium text-black tracking-wide">Ekip Üyelerimiz</span>
              </div>
              <h2 className="text-5xl lg:text-6xl font-heading font-medium text-black tracking-tight">
-               Meet our professionals
+               Profesyonellerimizle Tanışın
              </h2>
           </div>
 
           <button className="flex items-center justify-center px-6 py-3 rounded-full border border-black/20 text-black text-sm font-medium hover:bg-black hover:text-white transition-colors group">
-            All Members
+            Tüm Üyeler
             <div className="ml-3 w-8 h-8 rounded-full border border-black/20 flex items-center justify-center group-hover:border-white/20 transition-colors">
               <ArrowUpRight size={16} />
             </div>

@@ -8,25 +8,25 @@ import Magnetic from "@/components/Magnetic";
 const worksData = [
   {
     id: "01",
-    title: "Brand identity overhaul for Luxe Co.",
+    title: "Luxe Co. için kurumsal kimlik yenileme.",
     image: "/works/01.png",
-    tags: ["BRANDING", "MOCKUP"]
+    tags: ["MARKALAMA", "MOCKUP"]
   },
   {
     id: "02",
-    title: "E-Commerce platform design for shopy",
+    title: "Shopy için e-ticaret platform tasarımı",
     image: "/works/02.png",
     tags: []
   },
   {
     id: "03",
-    title: "Mobile app design for FitPro agency",
+    title: "FitPro ajansı için mobil uygulama tasarımı",
     image: "/works/03.png",
     tags: []
   },
   {
     id: "04",
-    title: "Digital Ad campaign for FlexWear",
+    title: "FlexWear için dijital reklam kampanyası",
     image: "/works/04.png",
     tags: []
   }
@@ -40,11 +40,11 @@ const SelectedWorks = () => {
         {/* Header */}
         <div className="flex justify-between items-center mb-24">
           <h2 className="text-4xl lg:text-5xl font-heading font-medium text-white tracking-tight">
-            Selected works
+            Seçili Çalışmalar
           </h2>
           
           <button className="flex items-center justify-center px-6 py-2 rounded-full border border-white/20 text-white text-sm font-medium hover:bg-white hover:text-black transition-colors group">
-            See All Works
+            Tüm Çalışmaları Gör
             <div className="ml-3 w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:border-black/20 transition-colors">
               <ArrowUpRight size={16} />
             </div>
@@ -104,7 +104,7 @@ const SelectedWorks = () => {
                     <button className={`flex items-center justify-center px-6 py-3 rounded-full border transition-colors duration-300 group-hover:bg-primary-neon group-hover:border-primary-neon group-hover:text-black
                       ${index === 0 ? 'bg-primary-neon border-primary-neon text-black' : 'border-white/30 text-white'}`}
                     >
-                      <span className="text-sm font-bold tracking-wide mr-3">View Full Project</span>
+                      <span className="text-sm font-bold tracking-wide mr-3">Projeyi Görüntüle</span>
                       <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors
                         ${index === 0 ? 'bg-black/10' : 'border border-white/30 group-hover:border-black/20 group-hover:bg-black/10'}`}
                       >

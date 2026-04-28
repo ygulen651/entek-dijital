@@ -2,43 +2,43 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Globe, CreditCard, ShieldCheck, Zap, BarChart3, Users } from "lucide-react";
+import { Globe, Smartphone, ShieldCheck, Zap, Search, Cpu } from "lucide-react";
 
 const features = [
   {
-    title: "Global Ödemeler",
-    desc: "Reklamlar, abonelikler ve envanter için Mastercard® ile ödeme yaparak kolaylığı maksimize edin.",
+    title: "Özel Web Yazılım",
+    desc: "İşinize özel, ölçeklenebilir ve yüksek performanslı web tabanlı yazılım çözümleri geliştiriyoruz.",
     icon: Globe,
     delay: 0.1
   },
   {
-    title: "Çoklu Döviz Desteği",
-    desc: "Giderek artan sayıda para biriminde hesaplar kullanın ve yerel bir kullanıcı gibi ödeme alın.",
-    icon: CreditCard,
+    title: "Mobil Uyumlu Tasarım",
+    desc: "Tüm cihazlarda kusursuz çalışan, kullanıcı dostu ve estetik arayüzler tasarlıyoruz.",
+    icon: Smartphone,
     delay: 0.2
   },
   {
-    title: "Online Ödeme",
-    desc: "Tüm dünyadaki müşterilerinizden güvenle ve hızla ödeme alabileceğiniz entegre çözümler.",
-    icon: Zap,
+    title: "SEO Optimizasyonu",
+    desc: "Google ve diğer arama motorlarında üst sıralarda yer almanız için teknik ve içerik odaklı çalışmalar yapıyoruz.",
+    icon: Search,
     delay: 0.3
   },
   {
     title: "Üst Düzey Güvenlik",
-    desc: "Paranızı ve verilerinizi güvende tutan dünya standartlarında güvenlik sistemleri.",
+    desc: "Yazılımlarınızı en güncel güvenlik protokolleri ile koruyor, verilerinizi güvence altına alıyoruz.",
     icon: ShieldCheck,
     delay: 0.4
   },
   {
-    title: "Anlık Analiz",
-    desc: "Tüm finansal verilerinizi tek bir panelden anlık olarak takip edin ve optimize edin.",
-    icon: BarChart3,
+    title: "API Entegrasyonları",
+    desc: "Mevcut sistemlerinizi diğer platformlarla sorunsuz konuşturuyor, veri akışını otomatikleştiriyoruz.",
+    icon: Zap,
     delay: 0.5
   },
   {
-    title: "Ekip Yönetimi",
-    desc: "Ekip üyelerinize özel yetkiler tanımlayın ve harcamaları kontrol altında tutun.",
-    icon: Users,
+    title: "Hızlı Altyapı",
+    desc: "Next.js ve modern teknolojiler kullanarak en hızlı yükleme sürelerine sahip web deneyimleri sunuyoruz.",
+    icon: Cpu,
     delay: 0.6
   }
 ];

@@ -6,22 +6,22 @@ import { Code, Layout, Smartphone, Search, BarChart, Globe } from "lucide-react"
 
 const services = [
   {
-    title: "Web Architecture",
+    title: "Web Mimarisi",
     description: "En son teknolojilerle yüksek performanslı ve ölçeklenebilir web sistemleri inşa ediyoruz.",
     icon: Code,
   },
   {
-    title: "Strategic Design",
+    title: "Stratejik Tasarım",
     description: "Kullanıcı odaklı, modern ve etkileyici arayüz tasarımlarıyla markanızı dijitalde öne çıkarıyoruz.",
     icon: Layout,
   },
   {
-    title: "Mobile Solutions",
+    title: "Mobil Çözümler",
     description: "iOS ve Android platformları için hızlı, güvenilir ve kullanıcı dostu mobil çözümler sunuyoruz.",
     icon: Smartphone,
   },
   {
-    title: "Growth SEO",
+    title: "SEO Stratejileri",
     description: "Arama motorlarında görünürlüğünüzü artırarak doğru hedef kitleye ulaşmanızı sağlıyoruz.",
     icon: Search,
   },
@@ -35,7 +35,7 @@ const Services = () => {
           <div className="lg:col-span-6">
             <h2 className="text-primary-neon font-sans font-bold uppercase tracking-[0.4em] text-xs mb-8 flex items-center gap-4">
               <span className="w-8 h-[1px] bg-primary-neon" />
-              OUR CAPABILITIES
+              YETENEKLERİMİZ
             </h2>
             <h3 className="text-5xl lg:text-7xl font-heading font-black text-white leading-[0.9] tracking-tighter">
               DİJİTAL <br />

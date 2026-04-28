@@ -7,23 +7,23 @@ import { ArrowUp, ArrowDown } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    text: "Averto delivered exceptional service at every stage of our project. Their team is responsive, professional, and dedicated to delivering real results.",
+    text: "Entek, projemizin her aşamasında olağanüstü bir hizmet sundu. Ekipleri son derece duyarlı, profesyonel ve gerçek sonuçlar sunmaya odaklanmış durumda.",
     name: "Olivia Bennett",
-    role: "Creative Director, PureVibes",
+    role: "Kreatif Direktör, PureVibes",
     avatar: "/team/01.png"
   },
   {
     id: 2,
-    text: "Working with this team was an absolute pleasure. They understood our vision perfectly and executed it with precision and creativity.",
+    text: "Bu ekiple çalışmak mutlak bir zevkti. Vizyonumuzu mükemmel bir şekilde anladılar ve hassasiyetle, yaratıcılıkla hayata geçirdiler.",
     name: "Marcus Johnson",
     role: "CEO, TechFlow",
     avatar: "/team/02.png"
   },
   {
     id: 3,
-    text: "The level of detail and commitment they bring is unmatched. Highly recommend for any digital transformation needs.",
+    text: "Getirdikleri detay seviyesi ve bağlılık eşsizdir. Her türlü dijital dönüşüm ihtiyacı için şiddetle tavsiye ediyorum.",
     name: "Sarah Jenkins",
-    role: "Marketing Head, Elevate",
+    role: "Pazarlama Müdürü, Elevate",
     avatar: "/team/03.png"
   }
 ];

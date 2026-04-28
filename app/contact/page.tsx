@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, ArrowUpRight, Facebook, Twitter, Linkedin, User, MessageSquare, Target, Shield, Palette } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowUpRight, User, MessageSquare, Target, Shield, Palette } from "lucide-react";
 import Image from "next/image";
 import Magnetic from "@/components/Magnetic";
 

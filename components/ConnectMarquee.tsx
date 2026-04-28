@@ -13,7 +13,7 @@ const ConnectMarquee = () => {
           repeat: Infinity,
           repeatType: "loop" as const,
           duration: 20,
-          ease: "linear",
+          ease: "linear" as const,
         },
       },
     },

@@ -7,11 +7,11 @@ import { Sparkle } from "lucide-react";
 const ConnectMarquee = () => {
   const marqueeVariants = {
     animate: {
-      x: [0, -1035], // Adjust based on content width
+      x: [0, -1035],
       transition: {
         x: {
           repeat: Infinity,
-          repeatType: "loop",
+          repeatType: "loop" as const,
           duration: 20,
           ease: "linear",
         },

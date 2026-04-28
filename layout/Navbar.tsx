@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -37,13 +38,8 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-12">
-          <Link href="/" className="group flex items-center gap-2">
-            <div className="w-8 h-8 bg-black flex items-center justify-center transition-colors duration-500">
-               <div className="w-4 h-4 bg-white rotate-45" />
-            </div>
-            <span className="text-2xl font-heading font-black text-black tracking-[-0.05em]">
-              Averto
-            </span>
+          <Link href="/" className="group flex items-center">
+            <Image src="/logo-full.png" alt="Entek Digital" width={500} height={150} className="w-auto h-[100px] object-contain origin-left" priority unoptimized={true} />
           </Link>
           <span className="hidden xl:block text-[10px] font-sans font-bold tracking-[0.2em] text-black/40 pt-1 uppercase">
             DIGITAL AGENCY ®

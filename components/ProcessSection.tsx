@@ -1,12 +1,9 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { ArrowUpRight, Search, PencilRuler, Rocket } from "lucide-react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
 import Magnetic from "@/components/Magnetic";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const processes = [
   {
@@ -33,29 +30,8 @@ const processes = [
 ];
 
 const ProcessSection = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(".process-card", {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-        y: 40,
-        opacity: 0,
-        stagger: 0.1,
-        duration: 0.8,
-        ease: "power2.out",
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <section ref={sectionRef} className="py-32 bg-white relative">
+    <section className="py-32 bg-white relative">
       <div className="container mx-auto px-6">
         
         {/* Header Row */}
@@ -84,9 +60,13 @@ const ProcessSection = () => {
 
         {/* Process Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {processes.map((step) => (
-            <div 
+          {processes.map((step, index) => (
+            <motion.div 
               key={step.id} 
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ delay: index * 0.1, duration: 0.8, ease: "easeOut" }}
               className={`process-card relative p-12 rounded-[2rem] border transition-all duration-500 group ${
                 step.highlight 
                 ? "border-black bg-white shadow-xl ring-1 ring-black" 
@@ -111,7 +91,7 @@ const ProcessSection = () => {
               <p className="text-black/60 leading-relaxed font-sans">
                 {step.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -7,8 +8,8 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="text-2xl font-heading font-black text-black tracking-tighter uppercase">
-              ENTEK<span className="text-primary-neon">DIGITAL</span>
+            <Link href="/" className="flex items-center mb-8">
+              <Image src="/logo-full.png" alt="Entek Digital" width={600} height={200} className="w-auto h-[150px] object-contain origin-left" unoptimized={true} />
             </Link>
             <p className="mt-4 text-black/60 max-w-md font-sans">
               Sadelik ve zarafetin özünü savunan özel bir yaratıcı ekip 

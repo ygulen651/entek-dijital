@@ -25,7 +25,7 @@ const ClientMarquee = () => {
           {[...brands, ...brands].map((brand, index) => (
             <span
               key={index}
-              className="text-4xl lg:text-7xl font-heading font-black text-black/[0.03] hover:text-primary-neon/20 transition-colors cursor-default"
+              className="text-4xl lg:text-7xl font-heading font-bold text-black/[0.03] hover:text-primary-neon/20 transition-colors cursor-default"
             >
               {brand}
             </span>

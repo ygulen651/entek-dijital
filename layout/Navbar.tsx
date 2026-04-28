@@ -157,7 +157,7 @@ const Navbar = () => {
                     <div className="flex items-center justify-between group">
                        {link.subLinks ? (
                          <button
-                           className="text-4xl sm:text-5xl font-heading font-black text-black hover:text-primary-neon transition-colors uppercase tracking-tighter block text-left"
+                           className="text-4xl sm:text-5xl font-heading font-bold text-black hover:text-primary-neon transition-colors uppercase tracking-tighter block text-left"
                            onClick={() => toggleSubMenu(link.name)}
                          >
                            {link.name}
@@ -165,7 +165,7 @@ const Navbar = () => {
                        ) : (
                          <Link
                            href={link.href}
-                           className="text-4xl sm:text-5xl font-heading font-black text-black hover:text-primary-neon transition-colors uppercase tracking-tighter block"
+                           className="text-4xl sm:text-5xl font-heading font-bold text-black hover:text-primary-neon transition-colors uppercase tracking-tighter block"
                            onClick={() => setIsOpen(false)}
                          >
                            {link.name}

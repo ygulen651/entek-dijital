@@ -23,7 +23,7 @@ const Footer = () => {
           {/* Newsletter Section */}
           <div className="lg:col-span-5 space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl font-heading font-black tracking-tighter">
+              <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-tighter">
                 Bültenimize <br /> Abone Olun
               </h2>
               <p className="text-white/80 font-sans max-w-xs leading-relaxed">
@@ -45,7 +45,7 @@ const Footer = () => {
 
           {/* Links Sections */}
           <div className="lg:col-span-2 lg:ml-auto">
-            <h4 className="text-white font-black mb-8 uppercase text-xs tracking-[0.2em] border-b border-white/10 pb-2">Şirket</h4>
+            <h4 className="text-white font-bold mb-8 uppercase text-xs tracking-[0.2em] border-b border-white/10 pb-2">Şirket</h4>
             <ul className="space-y-4 text-white/70 font-sans text-sm font-medium">
               <li><Link href="/about" className="hover:text-primary-neon transition-colors">Hakkımızda</Link></li>
               <li><Link href="/services" className="hover:text-primary-neon transition-colors">Hizmetlerimiz</Link></li>
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
 
           <div className="lg:col-span-2">
-            <h4 className="text-white font-black mb-8 uppercase text-xs tracking-[0.2em] border-b border-white/10 pb-2">Çözümler</h4>
+            <h4 className="text-white font-bold mb-8 uppercase text-xs tracking-[0.2em] border-b border-white/10 pb-2">Çözümler</h4>
             <ul className="space-y-4 text-white/70 font-sans text-sm font-medium">
               <li><Link href="/hizmetler/web-tasarim" className="hover:text-primary-neon transition-colors">Web Tasarım</Link></li>
               <li><Link href="/hizmetler/ozel-yazilim" className="hover:text-primary-neon transition-colors text-primary-neon">Özel Yazılım</Link></li>
@@ -68,7 +68,7 @@ const Footer = () => {
 
           {/* Instagram Grid Section */}
           <div className="lg:col-span-3">
-            <h4 className="text-white font-black mb-8 uppercase text-xs tracking-[0.2em] border-b border-white/10 pb-2">Instagram</h4>
+            <h4 className="text-white font-bold mb-8 uppercase text-xs tracking-[0.2em] border-b border-white/10 pb-2">Instagram</h4>
             <div className="grid grid-cols-2 gap-3">
               {[
                 "/sosyal/entek 3_.png",
@@ -100,7 +100,7 @@ const Footer = () => {
         <div className="mt-12 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-12">
             <Link href="/" className="flex items-center">
-              <Image src="/logo-full.png" alt="Entek Digital" width={300} height={100} className="w-auto h-12 object-contain invert brightness-0" unoptimized={true} />
+              <Image src="/logo-full.png" alt="Entek Digital" width={600} height={200} className="w-auto h-24 object-contain invert brightness-0" unoptimized={true} />
             </Link>
             <p className="hidden md:block text-xs text-white/60 font-sans font-bold">
               © {new Date().getFullYear()} ENTEK DIGITAL. Tüm hakları saklıdır.
@@ -114,7 +114,7 @@ const Footer = () => {
                  href={name === "IN" ? "https://www.instagram.com/entek.digital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" : "#"} 
                  target={name === "IN" ? "_blank" : undefined}
                  rel={name === "IN" ? "noopener noreferrer" : undefined}
-                 className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/80 hover:text-black hover:bg-white hover:border-white transition-all text-[10px] font-black"
+                 className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/80 hover:text-black hover:bg-white hover:border-white transition-all text-[10px] font-bold"
                >
                  {name}
                </a>

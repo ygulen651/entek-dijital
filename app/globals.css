@@ -10,7 +10,7 @@
   --color-text-secondary: #6B7280;
 
   --font-sans: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
-  --font-heading: var(--font-syne), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-heading: var(--font-instrument), var(--font-syne), ui-serif, sans-serif;
 
   --radius-xl: 1.5rem;
   --radius-2xl: 2.5rem;

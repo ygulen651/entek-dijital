@@ -41,7 +41,7 @@ const BlogPostDetail = () => {
                  <span className="w-1 h-1 rounded-full bg-black/10" />
                  <span className="flex items-center gap-2 text-black/40"><Calendar size={12} /> {post.date}</span>
               </div>
-              <h1 className="text-4xl md:text-6xl font-heading font-black text-black leading-tight tracking-tighter">
+              <h1 className="text-4xl md:text-6xl font-heading font-bold text-black leading-tight tracking-tighter">
                 {post.title}
               </h1>
            </div>
@@ -64,7 +64,7 @@ const BlogPostDetail = () => {
          <div className="prose prose-xl prose-slate max-w-none font-sans text-black/70 leading-relaxed space-y-8">
             {post.content.split('\n').map((paragraph, i) => {
               if (paragraph.trim().startsWith('**')) {
-                return <h3 key={i} className="text-3xl font-heading font-black text-black pt-4">{paragraph.replace(/\*\*/g, '')}</h3>;
+                return <h3 key={i} className="text-3xl font-heading font-bold text-black pt-4">{paragraph.replace(/\*\*/g, '')}</h3>;
               }
               if (paragraph.trim().startsWith('-')) {
                 return <li key={i} className="ml-6 list-disc font-bold text-black">{paragraph.replace('-', '').trim()}</li>;

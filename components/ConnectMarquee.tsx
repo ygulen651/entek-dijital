@@ -33,7 +33,7 @@ const ConnectMarquee = () => {
             {[...Array(20)].map((_, i) => (
               <div key={i} className="flex items-center gap-10 px-10">
                 <Sparkle className="text-primary-neon fill-primary-neon w-8 h-8 md:w-12 md:h-12" strokeWidth={0.5} />
-                <span className="text-4xl md:text-7xl font-heading font-black text-white uppercase tracking-tighter">
+                <span className="text-4xl md:text-7xl font-heading font-bold text-white uppercase tracking-tighter">
                   HAYDİ KONUŞALIM
                 </span>
               </div>

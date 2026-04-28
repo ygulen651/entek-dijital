@@ -15,7 +15,7 @@ const AboutSnippet = () => {
               <span className="w-8 h-[1px] bg-primary-neon" />
               KURUMSAL VİZYON
             </h2>
-            <h3 className="text-5xl lg:text-6xl font-heading font-black text-white leading-[0.9] tracking-tighter mb-8">
+            <h3 className="text-5xl lg:text-6xl font-heading font-bold text-white leading-[0.9] tracking-tighter mb-8">
               STRATEJİ <br /> 
               ODAKLI <br />
               DİJİTAL <br />

@@ -53,7 +53,7 @@ const AboutSection = () => {
               <span className="text-sm font-sans font-bold tracking-[0.2em] uppercase">Hakkımızda</span>
             </div>
 
-            <h2 className="about-reveal text-5xl lg:text-6xl font-heading font-black text-black leading-[1.1] tracking-tight">
+            <h2 className="about-reveal text-5xl lg:text-6xl font-heading font-bold text-black leading-[1.1] tracking-tight">
               Markaları Cesur Yaratıcılık ve Yenilikçi Stratejilerle Ateşliyoruz.
             </h2>
 
@@ -99,7 +99,7 @@ const AboutSection = () => {
                   </defs>
                   <text className="text-[8px] font-bold uppercase fill-black/20 tracking-[2px]">
                     <textPath href="#circlePath">
-                      • ÖDÜLLÜ AJANS • YILIN AJANSI • ÖDÜLLÜ AJANS •
+                      • DİJİTAL ÇÖZÜM • STRATEJİK ORTAK • DİJİTAL ÇÖZÜM •
                     </textPath>
                   </text>
                 </svg>
@@ -117,23 +117,23 @@ const AboutSection = () => {
         {/* Counter Row (Added as requested) */}
         <div className="mt-32 pt-20 border-t border-black/5 flex flex-wrap lg:flex-nowrap justify-between gap-12 about-reveal">
           <div className="text-center lg:text-left">
-            <h3 className="text-6xl font-heading font-black text-black">3.5k</h3>
-            <p className="text-sm font-bold text-black/40 uppercase tracking-widest mt-2">Tamamlanan Projeler</p>
+            <h3 className="text-6xl font-heading font-bold text-black">150+</h3>
+            <p className="text-sm font-medium text-black/40 uppercase tracking-widest mt-2">Tamamlanan Projeler</p>
           </div>
           <div className="hidden lg:block w-[1px] h-20 bg-black/5" />
           <div className="text-center lg:text-left">
-            <h3 className="text-6xl font-heading font-black text-black">25+</h3>
-            <p className="text-sm font-bold text-black/40 uppercase tracking-widest mt-2">Yıllık Deneyim</p>
+            <h3 className="text-6xl font-heading font-bold text-black">10+</h3>
+            <p className="text-sm font-medium text-black/40 uppercase tracking-widest mt-2">Yıllık Deneyim</p>
           </div>
           <div className="hidden lg:block w-[1px] h-20 bg-black/5" />
           <div className="text-center lg:text-left">
-            <h3 className="text-6xl font-heading font-black text-black">1.6k</h3>
-            <p className="text-sm font-bold text-black/40 uppercase tracking-widest mt-2">Küresel Müşteriler</p>
+            <h3 className="text-6xl font-heading font-bold text-black">25+</h3>
+            <p className="text-sm font-medium text-black/40 uppercase tracking-widest mt-2">Sektörel Çözüm</p>
           </div>
           <div className="hidden lg:block w-[1px] h-20 bg-black/5" />
           <div className="text-center lg:text-left">
-            <h3 className="text-6xl font-heading font-black text-black">22+</h3>
-            <p className="text-sm font-bold text-black/40 uppercase tracking-widest mt-2">Güvenilir Şirketler</p>
+            <h3 className="text-6xl font-heading font-bold text-black">200+</h3>
+            <p className="text-sm font-medium text-black/40 uppercase tracking-widest mt-2">Mutlu Müşteri</p>
           </div>
         </div>
       </div>

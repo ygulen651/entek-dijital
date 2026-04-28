@@ -41,7 +41,7 @@ const ProcessSection = () => {
                 <div className="w-1.5 h-1.5 rounded-full bg-black" />
                 <span className="text-sm font-sans font-bold tracking-[0.2em] uppercase">Stratejimiz</span>
              </div>
-             <h2 className="text-5xl lg:text-6xl font-heading font-black text-black">İş Sürecimiz</h2>
+             <h2 className="text-5xl lg:text-6xl font-heading font-bold text-black">İş Sürecimiz</h2>
           </div>
           
           <div className="flex items-center gap-4">
@@ -84,7 +84,7 @@ const ProcessSection = () => {
                 {step.icon}
               </div>
 
-              <h3 className="text-2xl lg:text-3xl font-heading font-black text-black mb-6">
+              <h3 className="text-2xl lg:text-3xl font-heading font-bold text-black mb-6">
                 {step.title}
               </h3>
               

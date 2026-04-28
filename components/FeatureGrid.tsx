@@ -51,7 +51,7 @@ const FeatureGrid = () => {
           <h2 className="text-primary-neon font-sans font-bold uppercase tracking-[0.4em] text-xs mb-4">
             ÖZELLİKLER
           </h2>
-          <h3 className="text-5xl lg:text-6xl font-heading font-black text-black tracking-tighter">
+          <h3 className="text-5xl lg:text-6xl font-heading font-bold text-black tracking-tighter">
             HIZLI, GÜVENLİ VE <br />
             <span className="text-text-secondary">AKILLI ÇÖZÜMLER.</span>
           </h3>

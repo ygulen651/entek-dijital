@@ -16,7 +16,7 @@ const BlogPage = () => {
               <div className="w-1.5 h-1.5 rounded-full bg-primary-neon" />
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-black/40">Fikirler & Analizler</span>
            </div>
-           <h1 className="text-5xl md:text-8xl font-heading font-black text-black leading-none tracking-tighter uppercase">
+           <h1 className="text-5xl md:text-8xl font-heading font-bold text-black leading-none tracking-tighter uppercase">
              BLOG
            </h1>
         </div>
@@ -49,7 +49,7 @@ const BlogPage = () => {
                   <div className="flex items-center gap-4 text-[10px] font-bold text-black/30 uppercase tracking-widest">
                      <span className="flex items-center gap-2"><Calendar size={12} /> {post.date}</span>
                   </div>
-                  <h2 className="text-3xl font-heading font-black text-black group-hover:text-primary-neon transition-colors leading-tight">
+                  <h2 className="text-3xl font-heading font-bold text-black group-hover:text-primary-neon transition-colors leading-tight">
                     {post.title}
                   </h2>
                   <p className="text-black/50 font-sans leading-relaxed line-clamp-2">

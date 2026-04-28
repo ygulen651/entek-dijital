@@ -18,7 +18,7 @@ const BlogSnippet = () => {
                  <div className="w-1.5 h-1.5 rounded-full bg-primary-neon" />
                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-black/40">Blog & Insights</span>
               </div>
-              <h2 className="text-5xl md:text-7xl font-heading font-black text-black leading-none tracking-tighter">
+              <h2 className="text-5xl md:text-7xl font-heading font-bold text-black leading-none tracking-tighter">
                 DİJİTAL <br /> DÜNYADAN <br /> HABERLER.
               </h2>
            </div>
@@ -49,8 +49,8 @@ const BlogSnippet = () => {
                    />
                  </div>
                  <div className="space-y-4">
-                   <span className="text-[10px] font-bold text-black/30 uppercase tracking-[0.2em]">{post.category} — {post.date}</span>
-                   <h3 className="text-2xl font-heading font-black text-black group-hover:text-primary-neon transition-colors leading-tight">
+                   <span className="text-[10px] font-medium text-black/30 uppercase tracking-[0.2em]">{post.category} — {post.date}</span>
+                   <h3 className="text-2xl font-heading font-bold text-black group-hover:text-primary-neon transition-colors leading-tight">
                      {post.title}
                    </h3>
                    <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest">

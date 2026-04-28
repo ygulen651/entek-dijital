@@ -14,7 +14,7 @@ const Newsletter = () => {
           
           <div className="row flex flex-wrap lg:flex-nowrap items-center gap-12 relative z-10">
             <div className="w-full lg:w-1/2">
-              <h2 className="text-4xl lg:text-5xl font-heading font-black text-white mb-4 uppercase tracking-tighter">Bültenimize Katılın.</h2>
+              <h2 className="text-4xl lg:text-5xl font-heading font-bold text-white mb-4 uppercase tracking-tighter">Bültenimize Katılın.</h2>
               <p className="text-text-secondary text-lg font-sans">
                 Günlük bültenimize abone olarak en yeni haberlerden ve fırsatlardan anında haberdar olun.
               </p>

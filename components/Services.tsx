@@ -37,7 +37,7 @@ const Services = () => {
               <span className="w-8 h-[1px] bg-primary-neon" />
               YETENEKLERİMİZ
             </h2>
-            <h3 className="text-5xl lg:text-7xl font-heading font-black text-white leading-[0.9] tracking-tighter">
+            <h3 className="text-5xl lg:text-7xl font-heading font-bold text-white leading-[0.9] tracking-tighter">
               DİJİTAL <br />
               <span className="text-text-secondary">ESTETİKLE</span> <br />
               BULUŞUYOR.

@@ -47,7 +47,7 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
       
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
         <div className="overflow-hidden mb-4">
-           <h1 className="preloader-text text-[15vw] font-heading font-black text-black leading-none tracking-tighter">
+           <h1 className="preloader-text text-[15vw] font-heading font-bold text-black leading-none tracking-tighter">
               ENTEK<span className="text-primary-neon">.</span>
            </h1>
         </div>

@@ -14,7 +14,7 @@ const ContactPage = () => {
       <section className="pt-40 pb-20 px-6 border-b-[6px] border-primary-neon">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-end gap-12">
           <div className="space-y-2">
-            <h1 className="text-7xl md:text-[10vw] font-heading font-black text-black leading-none tracking-tighter uppercase">
+            <h1 className="text-7xl md:text-[10vw] font-heading font-bold text-black leading-none tracking-tighter uppercase">
               BİZE <br />
               <span className="italic font-light">Ulaşın</span>
             </h1>
@@ -25,7 +25,7 @@ const ContactPage = () => {
                    <path d="M50 10 L50 90 M10 50 L90 50 M21 21 L79 79 M21 79 L79 21" />
                 </svg>
              </div>
-             <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-black/40">
+             <div className="flex items-center gap-2 text-[10px] font-medium uppercase tracking-widest text-black/40">
                 <span className="hover:text-black cursor-pointer">ANASAYFA</span>
                 <span>/</span>
                 <span className="text-black">İLETİŞİM</span>
@@ -58,7 +58,7 @@ const ContactPage = () => {
               <Phone className="text-black" size={32} strokeWidth={1} />
             </div>
             <div className="bg-white border border-black/5 rounded-3xl p-12 text-center space-y-6 hover:shadow-2xl transition-all h-full flex flex-col justify-center ring-1 ring-black/5">
-              <h3 className="text-2xl font-heading font-bold">Telefon</h3>
+              <h3 className="text-2xl font-heading font-semibold">Telefon</h3>
               <div className="space-y-1 text-black/50 font-sans">
                 <p>+90 (530) 418 07 70</p>
               </div>
@@ -93,7 +93,7 @@ const ContactPage = () => {
                  <div className="w-1.5 h-1.5 rounded-full bg-black" />
                  <span className="text-xs font-bold uppercase tracking-widest text-black/40">Hadi Konuşalım</span>
                </div>
-               <h2 className="text-5xl md:text-7xl font-heading font-black text-black leading-none tracking-tighter">
+               <h2 className="text-5xl md:text-7xl font-heading font-bold text-black leading-none tracking-tighter">
                  Birlikte <br /> Çalışalım.
                </h2>
                <p className="text-xl text-black/50 font-sans max-w-md leading-relaxed">
@@ -107,13 +107,13 @@ const ContactPage = () => {
                   <div className="w-10 h-10 rounded-full border border-black/10 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all">
                      <Mail size={16} />
                   </div>
-                  <span className="text-lg font-sans font-bold">info@entekdigital.com</span>
+                  <span className="text-lg font-sans font-medium text-black/70">info@entekdigital.com</span>
                </div>
                <div className="flex items-center gap-4 group cursor-pointer">
                   <div className="w-10 h-10 rounded-full border border-black/10 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all">
                      <Phone size={16} />
                   </div>
-                  <span className="text-lg font-sans font-bold">+90 (530) 418 07 70</span>
+                  <span className="text-lg font-sans font-medium text-black/70">+90 (530) 418 07 70</span>
                </div>
             </div>
 
@@ -138,9 +138,8 @@ const ContactPage = () => {
           {/* Right Side Form */}
           <div className="w-full lg:w-1/2 bg-white rounded-[3rem] p-8 md:p-16 shadow-sm border border-black/5">
              <form className="space-y-12" onSubmit={(e) => e.preventDefault()}>
-                
-                <div className="space-y-4">
-                   <label className="text-lg font-sans font-bold text-black block">Adınız ve Soyadınız?</label>
+                                <div className="space-y-4">
+                   <label className="text-lg font-sans font-medium text-black block">Adınız ve Soyadınız?</label>
                    <div className="relative border-b border-black/10 pb-4 flex items-center">
                       <input 
                         type="text" 
@@ -152,7 +151,7 @@ const ContactPage = () => {
                 </div>
 
                 <div className="space-y-4">
-                   <label className="text-lg font-sans font-bold text-black block">E-Posta Adresiniz?</label>
+                   <label className="text-lg font-sans font-medium text-black block">E-Posta Adresiniz?</label>
                    <div className="relative border-b border-black/10 pb-4 flex items-center">
                       <input 
                         type="email" 
@@ -164,7 +163,7 @@ const ContactPage = () => {
                 </div>
 
                 <div className="space-y-4">
-                   <label className="text-lg font-sans font-bold text-black block">Mesajınız?</label>
+                   <label className="text-lg font-sans font-medium text-black block">Mesajınız?</label>
                    <div className="relative border-b border-black/10 pb-4 flex items-center">
                       <textarea 
                         rows={1}
@@ -215,7 +214,7 @@ const ContactPage = () => {
                    <div className="w-1.5 h-1.5 rounded-full bg-black" />
                    <span className="text-xs font-bold uppercase tracking-widest text-black/40">Neden Bizi Seçmelisiniz?</span>
                 </div>
-                <h2 className="text-5xl md:text-7xl font-heading font-black text-black leading-none tracking-tighter">
+                <h2 className="text-5xl md:text-7xl font-heading font-bold text-black leading-none tracking-tighter">
                   Size En İyi <br /> Çözümleri Sunuyoruz
                 </h2>
              </div>

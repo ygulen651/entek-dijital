@@ -34,7 +34,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({
               <div className="w-1.5 h-1.5 rounded-full bg-primary-neon" />
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-black/40">{subtitle}</span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-heading font-black text-black leading-none tracking-tighter uppercase">
+            <h1 className="text-5xl md:text-8xl font-heading font-bold text-black leading-none tracking-tighter uppercase">
               {title}
             </h1>
             <p className="text-xl md:text-2xl text-black/60 font-sans leading-relaxed">
@@ -57,7 +57,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({
           </div>
           <div className="space-y-12">
             <div className="space-y-6">
-               <h2 className="text-4xl font-heading font-black text-black tracking-tight">Neler Sunuyoruz?</h2>
+               <h2 className="text-4xl font-heading font-bold text-black tracking-tight">Neler Sunuyoruz?</h2>
                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {features.map((feature, i) => (
                     <div key={i} className="flex items-center gap-3 p-4 rounded-2xl bg-surface border border-black/5">
@@ -69,7 +69,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({
             </div>
 
             <div className="space-y-8">
-               <h2 className="text-4xl font-heading font-black text-black tracking-tight">Neden Biz?</h2>
+               <h2 className="text-4xl font-heading font-bold text-black tracking-tight">Neden Biz?</h2>
                <div className="space-y-6">
                   {benefits.map((benefit, i) => (
                     <div key={i} className="space-y-2">
@@ -87,7 +87,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({
       <section className="container mx-auto px-6 py-20">
          <div className="bg-black rounded-[4rem] p-12 md:p-24 text-center space-y-8 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-96 h-96 bg-primary-neon/20 blur-[100px] rounded-full -mr-48 -mt-48" />
-            <h2 className="text-4xl md:text-7xl font-heading font-black text-white leading-none tracking-tighter relative z-10">
+            <h2 className="text-4xl md:text-7xl font-heading font-bold text-white leading-none tracking-tighter relative z-10">
               PROJENİZİ BAŞLATMAYA <br /> HAZIR MISINIZ?
             </h2>
             <div className="flex justify-center relative z-10">

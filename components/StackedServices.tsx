@@ -87,8 +87,8 @@ const StackedServices = () => {
 
                 {/* Right Column */}
                 <div className="lg:col-span-9">
-                  <div className="flex justify-between items-start mb-8">
-                    <h3 className="text-6xl lg:text-[7rem] font-medium text-white tracking-tight leading-none">
+                  <div className="flex justify-between items-start mb-6 md:mb-8">
+                    <h3 className="text-4xl md:text-6xl lg:text-[7rem] font-medium text-white tracking-tight leading-none">
                       {service.title}
                     </h3>
                     <div className="hidden md:block">
@@ -96,7 +96,7 @@ const StackedServices = () => {
                     </div>
                   </div>
                   
-                  <p className="text-white/60 text-lg max-w-xl mb-16 leading-relaxed">
+                  <p className="text-white/60 text-base md:text-lg max-w-xl mb-8 md:mb-16 leading-relaxed">
                     {service.description}
                   </p>
 
@@ -104,7 +104,7 @@ const StackedServices = () => {
                     {service.items.map((item, i) => (
                       <div 
                         key={i} 
-                        className={`py-6 border-t border-white/10 text-white text-xl lg:text-2xl font-medium ${i === service.items.length - 1 ? 'border-b border-white/10' : ''}`}
+                        className={`py-4 md:py-6 border-t border-white/10 text-white text-lg md:text-xl lg:text-2xl font-medium ${i === service.items.length - 1 ? 'border-b border-white/10' : ''}`}
                       >
                         {item}
                       </div>
@@ -112,10 +112,10 @@ const StackedServices = () => {
                   </div>
 
                   {/* Mobile Show Details */}
-                  <div className="block lg:hidden mt-12">
-                    <span className="text-white/40 text-sm font-medium mb-4 block">Detayları Gör</span>
-                    <div className="w-16 h-16 border border-primary-neon flex items-center justify-center">
-                      <ArrowUpRight className="w-8 h-8 text-primary-neon" strokeWidth={1} />
+                  <div className="block lg:hidden mt-8 md:mt-12">
+                    <span className="text-white/40 text-xs font-medium mb-4 block">Detayları Gör</span>
+                    <div className="w-12 h-12 border border-primary-neon flex items-center justify-center">
+                      <ArrowUpRight className="w-6 h-6 text-primary-neon" strokeWidth={1} />
                     </div>
                   </div>
                 </div>

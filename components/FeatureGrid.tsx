@@ -47,17 +47,17 @@ const FeatureGrid = () => {
   return (
     <section className="py-32 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="mb-20">
-          <h2 className="text-primary-neon font-sans font-bold uppercase tracking-[0.4em] text-xs mb-4">
+        <div className="mb-12 md:mb-20">
+          <h2 className="text-primary-neon font-sans font-bold uppercase tracking-[0.4em] text-[10px] md:text-xs mb-4">
             ÖZELLİKLER
           </h2>
-          <h3 className="text-5xl lg:text-6xl font-heading font-bold text-black tracking-tighter">
+          <h3 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-black tracking-tighter">
             HIZLI, GÜVENLİ VE <br />
             <span className="text-text-secondary">AKILLI ÇÖZÜMLER.</span>
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -65,13 +65,13 @@ const FeatureGrid = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: feature.delay }}
-              className="group p-10 border border-black/5 bg-surface hover:shadow-xl hover:shadow-primary-neon/5 transition-all duration-500 relative"
+              className="group p-8 md:p-10 border border-black/5 bg-surface hover:shadow-xl hover:shadow-primary-neon/5 transition-all duration-500 relative"
             >
-              <div className="w-14 h-14 bg-primary-neon/10 flex items-center justify-center mb-8 group-hover:bg-primary-neon transition-colors duration-500">
-                <feature.icon className="text-primary-neon group-hover:text-white transition-colors duration-500" size={28} />
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-primary-neon/10 flex items-center justify-center mb-6 md:mb-8 group-hover:bg-primary-neon transition-colors duration-500">
+                <feature.icon className="text-primary-neon group-hover:text-white transition-colors duration-500" size={24} />
               </div>
-              <h4 className="text-xl font-bold text-black mb-4 uppercase tracking-tight">{feature.title}</h4>
-              <p className="text-text-secondary leading-relaxed mb-8">{feature.desc}</p>
+              <h4 className="text-lg md:text-xl font-bold text-black mb-3 md:mb-4 uppercase tracking-tight">{feature.title}</h4>
+              <p className="text-text-secondary text-sm md:text-base leading-relaxed mb-6 md:mb-8">{feature.desc}</p>
               <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-primary-neon group-hover:w-full transition-all duration-700" />
             </motion.div>
           ))}

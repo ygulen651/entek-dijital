@@ -157,7 +157,7 @@ const Navbar = () => {
                     <div className="flex items-center justify-between group">
                        {link.subLinks ? (
                          <button
-                           className="text-4xl sm:text-5xl font-heading font-bold text-black hover:text-primary-neon transition-colors uppercase tracking-tighter block text-left"
+                           className="text-3xl sm:text-5xl font-heading font-bold text-black hover:text-primary-neon transition-colors uppercase tracking-tighter block text-left"
                            onClick={() => toggleSubMenu(link.name)}
                          >
                            {link.name}
@@ -165,7 +165,7 @@ const Navbar = () => {
                        ) : (
                          <Link
                            href={link.href}
-                           className="text-4xl sm:text-5xl font-heading font-bold text-black hover:text-primary-neon transition-colors uppercase tracking-tighter block"
+                           className="text-3xl sm:text-5xl font-heading font-bold text-black hover:text-primary-neon transition-colors uppercase tracking-tighter block"
                            onClick={() => setIsOpen(false)}
                          >
                            {link.name}
@@ -175,11 +175,11 @@ const Navbar = () => {
                           <button 
                             onClick={() => toggleSubMenu(link.name)}
                             className={cn(
-                              "w-12 h-12 rounded-full border border-black/10 flex items-center justify-center transition-all",
+                              "w-10 h-10 md:w-12 md:h-12 rounded-full border border-black/10 flex items-center justify-center transition-all",
                               activeSubMenu === link.name ? "bg-black text-white border-black" : ""
                             )}
                           >
-                             <ChevronDown size={20} className={cn("transition-transform", activeSubMenu === link.name ? "rotate-180" : "")} />
+                             <ChevronDown size={18} className={cn("transition-transform", activeSubMenu === link.name ? "rotate-180" : "")} />
                           </button>
                        )}
                     </div>
@@ -191,14 +191,14 @@ const Navbar = () => {
                            initial={{ height: 0, opacity: 0 }}
                            animate={{ height: "auto", opacity: 1 }}
                            exit={{ height: 0, opacity: 0 }}
-                           className="overflow-hidden bg-black/5 rounded-3xl mt-4"
+                           className="overflow-hidden bg-black/5 rounded-2xl mt-4"
                          >
-                            <div className="p-6 flex flex-col gap-4">
+                            <div className="p-4 md:p-6 flex flex-col gap-3 md:gap-4">
                                {link.subLinks.map((sub) => (
                                  <Link 
                                    key={sub.name} 
                                    href={sub.href}
-                                   className="text-lg font-sans font-bold text-black/60 hover:text-primary-neon uppercase tracking-tight"
+                                   className="text-base md:text-lg font-sans font-bold text-black/60 hover:text-primary-neon uppercase tracking-tight"
                                    onClick={() => setIsOpen(false)}
                                  >
                                    {sub.name}
@@ -214,7 +214,7 @@ const Navbar = () => {
             </div>
 
             {/* Bottom Footer Area */}
-            <div className="mt-auto border-t border-black/5 pt-12 pb-6 grid grid-cols-2 gap-8">
+            <div className="mt-auto border-t border-black/5 pt-8 md:pt-12 pb-6 grid grid-cols-2 gap-8">
                <motion.div 
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
@@ -227,12 +227,12 @@ const Navbar = () => {
                         href="https://www.instagram.com/entek.digital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className="text-sm font-sans font-bold text-black/60 uppercase hover:text-primary-neon transition-colors"
+                        className="text-xs md:text-sm font-sans font-bold text-black/60 uppercase hover:text-primary-neon transition-colors"
                       >
                         Instagram
                       </a>
-                      <span className="text-sm font-sans font-bold text-black/60 uppercase">Linkedin</span>
-                      <span className="text-sm font-sans font-bold text-black/60 uppercase">Twitter</span>
+                      <span className="text-xs md:text-sm font-sans font-bold text-black/60 uppercase">Linkedin</span>
+                      <span className="text-xs md:text-sm font-sans font-bold text-black/60 uppercase">Twitter</span>
                    </div>
                </motion.div>
 
@@ -243,9 +243,8 @@ const Navbar = () => {
                  className="flex flex-col gap-4"
                >
                   <span className="text-[10px] font-bold text-black/30 uppercase tracking-[0.2em]">Lokasyon</span>
-                  <p className="text-sm font-sans font-bold text-black/60 uppercase leading-relaxed">
-                     İSTANBUL, TR <br />
-                     NEW YORK, US
+                  <p className="text-xs md:text-sm font-sans font-bold text-black/60 uppercase leading-relaxed">
+                     KARAMAN, TR
                   </p>
                </motion.div>
             </div>

@@ -38,8 +38,8 @@ const SelectedWorks = () => {
       <div className="container mx-auto px-6">
         
         {/* Header */}
-        <div className="flex justify-between items-center mb-24">
-          <h2 className="text-4xl lg:text-5xl font-heading font-medium text-white tracking-tight">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 md:mb-24 gap-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-medium text-white tracking-tight">
             Seçili Çalışmalar
           </h2>
           
@@ -59,7 +59,7 @@ const SelectedWorks = () => {
             return (
               <div 
                 key={work.id} 
-                className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-16 lg:gap-32 group`}
+                className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-8 lg:gap-32 group`}
               >
                 {/* Image Container */}
                 <div className="w-full lg:w-1/2 relative">
@@ -89,14 +89,14 @@ const SelectedWorks = () => {
 
                 {/* Text Content */}
                 <div className="w-full lg:w-1/2 flex flex-col items-start">
-                  <div className="flex items-end mb-6">
-                    <span className="text-6xl lg:text-7xl font-heading font-medium text-white/30 tracking-tighter">
+                  <div className="flex items-end mb-4 md:mb-6">
+                    <span className="text-4xl md:text-6xl lg:text-7xl font-heading font-medium text-white/30 tracking-tighter">
                       {work.id}
                     </span>
-                    <span className="text-4xl text-white/30 mb-2">,</span>
+                    <span className="text-2xl md:text-4xl text-white/30 mb-1 md:mb-2">,</span>
                   </div>
                   
-                  <h3 className="text-4xl lg:text-5xl font-medium text-white tracking-tight leading-[1.1] mb-12 max-w-xl">
+                  <h3 className="text-2xl md:text-4xl lg:text-5xl font-medium text-white tracking-tight leading-[1.1] mb-8 md:mb-12 max-w-xl">
                     {work.title}
                   </h3>
 

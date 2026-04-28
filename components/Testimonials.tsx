@@ -55,8 +55,8 @@ const Testimonials = () => {
 
           {/* Testimonial Card (Center) */}
           <div className="flex-1 w-full relative">
-             <div className="bg-[#f0f4e8] border-2 border-[#BFFF00] rounded-lg p-12 lg:p-16">
-               <p className="text-2xl lg:text-3xl font-sans text-black leading-relaxed mb-12">
+             <div className="bg-[#f0f4e8] border-2 border-[#BFFF00] rounded-lg p-8 md:p-12 lg:p-16">
+               <p className="text-lg md:text-2xl lg:text-3xl font-sans text-black leading-relaxed mb-8 md:mb-12">
                  {testimonials[activeIndex].text}
                </p>
                

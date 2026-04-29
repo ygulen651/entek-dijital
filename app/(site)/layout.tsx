@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, Instrument_Sans } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import ClientLayout from "@/layout/ClientLayout";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Karaman Dijital Ajans | ENTEK DIGITAL",
     description: "Karaman'da modern dijital çözümler, web tasarım ve SEO hizmetleri.",
-    url: "https://entek.digital",
+    url: "https://www.entekdigital.com",
     siteName: "Entek Digital",
     locale: "tr_TR",
     type: "website",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Karaman'da modern dijital çözümler, web tasarım ve SEO hizmetleri.",
   },
   alternates: {
-    canonical: "https://entek.digital",
+    canonical: "https://www.entekdigital.com",
   },
   robots: {
     index: true,
@@ -60,9 +60,9 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Entek Digital Karaman",
-  "image": "https://entek.digital/logo-full.png",
-  "@id": "https://entek.digital",
-  "url": "https://entek.digital",
+  "image": "https://www.entekdigital.com/logo-full.png",
+  "@id": "https://www.entekdigital.com",
+  "url": "https://www.entekdigital.com",
   "telephone": "+905304180770",
   "address": {
     "@type": "PostalAddress",

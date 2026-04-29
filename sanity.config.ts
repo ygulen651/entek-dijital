@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'Entek Digital Admin',
 
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,
+  projectId: 'hz9ci14r', // Explicit ID to avoid env issues during build
+  dataset: 'production',
 
   basePath: '/studio',
 

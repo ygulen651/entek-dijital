@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://entek.digital/sitemap.xml',
+    sitemap: 'https://www.entekdigital.com/sitemap.xml',
   };
 }

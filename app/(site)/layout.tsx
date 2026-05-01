@@ -3,6 +3,7 @@ import { Syne, Instrument_Sans } from "next/font/google";
 import "../globals.css";
 import ClientLayout from "@/layout/ClientLayout";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument",
@@ -113,6 +114,19 @@ export default function RootLayout({
       <body>
         <ClientLayout>{children}</ClientLayout>
         <Analytics />
+        <Script id="tawk-to" strategy="afterInteractive">
+          {`
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/69f47ee26490501c3031981b/1jnhgv9ik';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );

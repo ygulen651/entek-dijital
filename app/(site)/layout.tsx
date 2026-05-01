@@ -120,7 +120,7 @@ export default function RootLayout({
             (function(){
             var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
             s1.async=true;
-            s1.src='https://embed.tawk.to/dce83f55ffcfcf33147df304a4530cc46297b62d/1jnhgv9ik';
+            s1.src='https://embed.tawk.to/69f47ee26490501c3031981b/1jnhgv9ik';
             s1.charset='UTF-8';
             s1.setAttribute('crossorigin','*');
             s0.parentNode.insertBefore(s1,s0);

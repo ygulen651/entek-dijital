@@ -1,0 +1,48 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Yönetici: admins/{e-posta} dokümanı bulunan giriş yapmış kullanıcı.
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email != null
+        && exists(/databases/$(database)/documents/admins/$(request.auth.token.email.lower()));
+    }
+
+    match /admins/{email} {
+      // Kullanıcı sadece kendi yönetici kaydını görebilir; yöneticiler Firebase konsolundan eklenir.
+      allow read: if request.auth != null && request.auth.token.email.lower() == email;
+      allow write: if false;
+    }
+
+    // Site içerikleri: herkes okur, sadece yönetici yazar.
+    match /settings/{id}     { allow read: if true; allow write: if isAdmin(); }
+    match /blog/{id}         { allow read: if true; allow write: if isAdmin(); }
+    match /projects/{id}     { allow read: if true; allow write: if isAdmin(); }
+    match /services/{id}     { allow read: if true; allow write: if isAdmin(); }
+    match /testimonials/{id} { allow read: if true; allow write: if isAdmin(); }
+    match /team/{id}         { allow read: if true; allow write: if isAdmin(); }
+
+    // İletişim formu: ziyaretçi sadece yeni mesaj oluşturabilir.
+    match /messages/{id} {
+      allow create: if request.resource.data.keys().hasOnly(['name', 'email', 'message', 'read', 'createdAt'])
+        && request.resource.data.name is string && request.resource.data.name.size() > 1 && request.resource.data.name.size() <= 100
+        && request.resource.data.email is string && request.resource.data.email.size() <= 200
+        && request.resource.data.message is string && request.resource.data.message.size() >= 10 && request.resource.data.message.size() <= 5000
+        && request.resource.data.read == false
+        && request.resource.data.createdAt == request.time;
+      allow read, update, delete: if isAdmin();
+    }
+
+    // Bülten: doküman kimliği e-posta adresidir; ziyaretçi sadece ekleyebilir.
+    match /subscribers/{email} {
+      allow create: if request.resource.data.keys().hasOnly(['email', 'createdAt'])
+        && request.resource.data.email == email
+        && email.matches('[^@ ]+@[^@ ]+[.][^@ ]+')
+        && email.size() <= 200
+        && request.resource.data.createdAt == request.time;
+      allow read, delete: if isAdmin();
+    }
+  }
+}

@@ -77,6 +77,7 @@ const Footer = ({ settings, serviceLinks }: { settings: SiteSettings; serviceLin
               <li><Link href="/projects" className="hover:text-primary-neon transition-colors">Projelerimiz</Link></li>
               <li><Link href="/blog" className="hover:text-primary-neon transition-colors">Blog</Link></li>
               <li><Link href="/contact" className="hover:text-primary-neon transition-colors">İletişim</Link></li>
+              <li><Link href="/gizlilik-politikasi" className="hover:text-primary-neon transition-colors">Mobil Uygulama Gizlilik Politikası</Link></li>
             </ul>
           </div>
 

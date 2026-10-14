@@ -15,6 +15,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: '/projects', changeFrequency: 'monthly' as const, priority: 0.8 },
     { path: '/blog', changeFrequency: 'weekly' as const, priority: 0.7 },
     { path: '/contact', changeFrequency: 'monthly' as const, priority: 0.5 },
+    { path: '/gizlilik-politikasi', changeFrequency: 'yearly' as const, priority: 0.3 },
   ].map(({ path, ...rest }) => ({ url: `${baseUrl}${path || "/"}`, ...rest }));
 
   return [
